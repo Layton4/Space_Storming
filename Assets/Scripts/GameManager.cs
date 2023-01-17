@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            bullets.Add(Instantiate(bulletPrefab, shotPoint));
+
+            bullets.Add(Instantiate(bulletPrefab, shotPoint.position, shotPoint.rotation));
         }
 
         foreach (GameObject bullet in bullets)

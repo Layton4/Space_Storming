@@ -5,19 +5,13 @@ using UnityEngine;
 public class BulletLogic : MonoBehaviour
 {
     public Vector3 moveDirection;
-    private float speed = 5f;
-    private PlayerController playerControllerScript;
+    private float speed = 7f;
 
-    private void Awake()
+
+    private void Update()
     {
-        playerControllerScript = FindObjectOfType<PlayerController>();
+        transform.Translate(moveDirection * speed * Time.deltaTime);
     }
-
-    private void Start()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D othercollider2D)
     {
         if(othercollider2D.gameObject.CompareTag("Wall"))

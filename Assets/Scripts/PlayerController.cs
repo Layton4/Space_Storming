@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 0.75f;
+    public float speed = 1.5f;
     public const string HORIZONTAL = "Horizontal", VERTICAL = "Vertical";
     public const string LASTH = "LastHorizontal", LASTV = "LastVertical";
 
@@ -21,9 +21,16 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     private Transform shotPoint;
 
+    public bool canShot;
+
     public List<GameObject> bullets;
     public int currentBullet;
     private bool isWalking;
+
+    private GameObject messagePanel;
+    private Animator DoorAnimator;
+
+    private bool isOnTrigger;
     private void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
@@ -32,6 +39,9 @@ public class PlayerController : MonoBehaviour
         gameManagerScript = FindObjectOfType<GameManager>();
 
         bullets = gameManagerScript.bullets;
+        canShot = true;
+
+        isOnTrigger = false;
     }
 
     private void Start()
@@ -44,16 +54,18 @@ public class PlayerController : MonoBehaviour
 
         Movement();
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && canShot)
         {
-            bullets[currentBullet].transform.position = lastDirection;
-            bullets[currentBullet].SetActive(true);
-            
-            currentBullet++;
-            if(currentBullet >= bullets.Count)
-            {
-                currentBullet = 0;
-            }
+
+            //Instantiate(bulletPrefab, shotTestObj.transform.position, transform.rotation);
+            StartCoroutine(ShotCooldown());
+        }
+
+        if(isOnTrigger && Input.GetKeyDown(KeyCode.E))
+        {
+            isOnTrigger = false;
+            messagePanel.SetActive(false);
+            Debug.Log("Abriendo Puerta");
         }
     }
 
@@ -92,4 +104,41 @@ public class PlayerController : MonoBehaviour
 
         moveDirection = new Vector2(xInput, yInput).normalized * speed;
     }
+
+    public IEnumerator ShotCooldown()
+    {
+        float shotTimer = 1f;
+        if(canShot == true)
+        {
+
+            bullets[currentBullet].SetActive(true);
+            bullets[currentBullet].transform.position = shotPoint.position;
+            bullets[currentBullet].GetComponent<BulletLogic>().moveDirection = lastDirection;
+            currentBullet++;
+            if (currentBullet >= bullets.Count)
+            {
+                currentBullet = 0;
+            }
+            canShot = false;
+        }
+        yield return new WaitForSeconds(shotTimer);
+        canShot = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D otherCollider)
+    {
+        if(otherCollider.gameObject.CompareTag("Door"))
+        {
+            messagePanel = otherCollider.gameObject.transform.GetChild(0).gameObject;
+            messagePanel.SetActive(true);
+  
+            isOnTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        messagePanel.SetActive(false);
+    }
+
 }
