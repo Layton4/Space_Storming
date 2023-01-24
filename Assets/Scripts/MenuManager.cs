@@ -24,5 +24,9 @@ public class MenuManager : MonoBehaviour
 
     }
 
+    public void OpenOptionsPanel(GameObject panel)
+    {
+        panel.SetActive(true);
+    }
 
 }
