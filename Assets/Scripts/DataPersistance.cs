@@ -18,8 +18,6 @@ public class DataPersistance
 
     public static void SaveForFutureGames()
     {
-        Debug.Log($"SAVED INFO: music: {DataPersistance.musicVolume} \n autosave: {DataPersistance.autosaveToggle}  sfx: {DataPersistance.sfxVolume}");
-
         //Volumes Settigns
         PlayerPrefs.SetFloat("SFX_Volume", sfxVolume);
         PlayerPrefs.SetInt("SFX_Toggle", sfxToggle);

@@ -16,46 +16,39 @@ public class AudioManager : MonoBehaviour
 
 
     #region OptionsVolumeChanges
-    public void volumeChange()
+    public void VolumeChange()
     {
         DataPersistance.sfxVolume = sfxSlider.value;
         DataPersistance.musicVolume = musicSlider.value;
-
-        DataPersistance.SaveForFutureGames();
     }
 
-    public void volumeToggles()
+    public void VolumeToggles()
     {
-        DataPersistance.sfxToggle = sfxToggle ? 1 : 0;
-        DataPersistance.musicToggle = musicToggle ? 1 : 0;
-
-        DataPersistance.SaveForFutureGames();
+        DataPersistance.sfxToggle = sfxToggle.isOn ? 1 : 0;
+        DataPersistance.musicToggle = musicToggle.isOn ? 1 : 0;
     }
     #endregion
 
     private void Start()
     {
-        FirstSetVolume();
+        LoadVolumeSettings();
     }
-    public void FirstSetVolume()
-    {
-        sfxSlider.value = PlayerPrefs.GetFloat("SFX_Volume", 1f);
-        musicSlider.value = PlayerPrefs.GetFloat("Music_Volume", 1f);
 
-        sfxToggle.isOn = PlayerPrefs.GetInt("SFX_Volume", 1) == 1;
-        musicToggle.isOn = PlayerPrefs.GetInt("Music_Volume", 1) == 1;
-    }
     public void LoadVolumeSettings()
     {
-        Debug.Log($"AUDIOMANAGER music: {DataPersistance.musicVolume} \n autosave: {DataPersistance.autosaveToggle} sfx: {DataPersistance.sfxVolume}");
-
         DataPersistance.sfxVolume = PlayerPrefs.GetFloat("SFX_Volume",1f);
         DataPersistance.musicVolume = PlayerPrefs.GetFloat("Music_Volume", 1f);
 
-        DataPersistance.sfxToggle = PlayerPrefs.GetInt("SFX_Volume", 1);
-        DataPersistance.musicToggle = PlayerPrefs.GetInt("Music_Volume", 1);
+        DataPersistance.sfxToggle = PlayerPrefs.GetInt("SFX_Toggle", 1);
+        DataPersistance.musicToggle = PlayerPrefs.GetInt("Music_Toggle", 1);
 
         //Once we have the data of playerprefs introduced into the DataPersistance vars we pass the data into the options.
+
+        sfxSlider.value = DataPersistance.sfxVolume;
+        musicSlider.value = DataPersistance.musicVolume;
+
+        sfxToggle.isOn = DataPersistance.sfxToggle == 1;
+        musicToggle.isOn = DataPersistance.musicToggle == 1;
     }
 
 }

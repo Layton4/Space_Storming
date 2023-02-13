@@ -57,6 +57,7 @@ public class MenuManager : MonoBehaviour
     public void backButton(GameObject closedPanel)
     {
         OptionsPanelAnimator.SetBool("isActivated",false); //Activated the animation of closing the panel
+        DataPersistance.SaveForFutureGames();
         StartCoroutine(WaitAndOff(1.15f, closedPanel));
     }
     #endregion
