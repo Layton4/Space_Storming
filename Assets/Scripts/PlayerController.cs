@@ -31,12 +31,15 @@ public class PlayerController : MonoBehaviour
     private Animator DoorAnimator;
 
     private bool isOnTrigger;
+
+
     private void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
         shotPoint = transform.GetChild(0).GetComponent<Transform>();
         gameManagerScript = FindObjectOfType<GameManager>();
+
 
         bullets = gameManagerScript.bullets;
         canShot = true;
@@ -52,6 +55,7 @@ public class PlayerController : MonoBehaviour
     {
         isWalking = false;
 
+
         Movement();
 
         if(Input.GetKeyDown(KeyCode.Space) && canShot)
@@ -63,9 +67,19 @@ public class PlayerController : MonoBehaviour
 
         if(isOnTrigger && Input.GetKeyDown(KeyCode.E))
         {
-            isOnTrigger = false;
             messagePanel.SetActive(false);
             Debug.Log("Abriendo Puerta");
+
+            DoorAnimator.SetBool("isOpen", true);
+
+            gameManagerScript.openPanel = true;
+            gameManagerScript.closePanel = false;
+            //isOnTrigger = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameManagerScript.OpenOptionPanel();
         }
     }
 
@@ -129,6 +143,7 @@ public class PlayerController : MonoBehaviour
     {
         if(otherCollider.gameObject.CompareTag("Door"))
         {
+            DoorAnimator = otherCollider.gameObject.GetComponent<Animator>();
             messagePanel = otherCollider.gameObject.transform.GetChild(0).gameObject;
             messagePanel.SetActive(true);
   
@@ -138,7 +153,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        messagePanel.SetActive(false);
+        if(messagePanel != null)
+        {
+            messagePanel.SetActive(false);
+        }
+        isOnTrigger = false;
     }
 
 }

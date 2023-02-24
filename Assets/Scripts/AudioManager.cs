@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 using TMPro;
 
 public class AudioManager : MonoBehaviour
@@ -12,6 +13,11 @@ public class AudioManager : MonoBehaviour
 
     public Toggle sfxToggle;
     public Toggle musicToggle;
+
+    public AudioMixer Mixer;
+
+    public const string mixerMusic = "MusicVolume";
+    public const string mixerSFX = "SFXVolume";
     #endregion
 
 
@@ -36,8 +42,8 @@ public class AudioManager : MonoBehaviour
 
     public void LoadVolumeSettings()
     {
-        DataPersistance.sfxVolume = PlayerPrefs.GetFloat("SFX_Volume",1f);
-        DataPersistance.musicVolume = PlayerPrefs.GetFloat("Music_Volume", 1f);
+        DataPersistance.sfxVolume = PlayerPrefs.GetFloat("SFX_Volume",0.5f);
+        DataPersistance.musicVolume = PlayerPrefs.GetFloat("Music_Volume", 0.5f);
 
         DataPersistance.sfxToggle = PlayerPrefs.GetInt("SFX_Toggle", 1);
         DataPersistance.musicToggle = PlayerPrefs.GetInt("Music_Toggle", 1);
@@ -51,4 +57,22 @@ public class AudioManager : MonoBehaviour
         musicToggle.isOn = DataPersistance.musicToggle == 1;
     }
 
+
+    private void OnDisable()
+    {
+        PlayerPrefs.SetFloat(AudioManager.mixerMusic, musicSlider.value);
+        PlayerPrefs.SetFloat(AudioManager.mixerSFX, sfxSlider.value);
+    }
+
+    public void SetMusicVolume(float value)
+    {
+        Mixer.SetFloat(mixerMusic, Mathf.Log10(value) * 20);
+        DataPersistance.musicVolume = musicSlider.value;
+    }
+
+    public void SetSFXVolume(float value)
+    {
+        Mixer.SetFloat(mixerSFX, Mathf.Log10(value) * 20);
+        DataPersistance.sfxVolume= sfxSlider.value;
+    }
 }
