@@ -21,8 +21,12 @@ public class IntroManager : MonoBehaviour
     public int currentDialogue;
 
     public Animator spaceShipAnimator;
+
+    public SceneFlow SceneFlowScript;
     private void Awake()
     {
+        SceneFlowScript = FindObjectOfType<SceneFlow>();
+
         OriginalMessage = texts[currentDialogue];
         DialogueText.text = "";
     }
@@ -119,6 +123,8 @@ public class IntroManager : MonoBehaviour
                 StartCoroutine(FadeOut(0.2f));
                 spaceShipAnimator.SetBool("Out", true);
                 nextButton.gameObject.SetActive(false);
+
+                StartCoroutine(SceneFlowScript.GoToScene("Game", 2f));
             }
         }
         else
@@ -126,6 +132,7 @@ public class IntroManager : MonoBehaviour
             DialogueAnimDone = true;
             StopAllCoroutines();
             DialogueText.text = texts[currentDialogue];
+            
         }
         
         //nextButton.gameObject.SetActive(false);

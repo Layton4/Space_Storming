@@ -16,4 +16,8 @@ public class SceneFlow : MonoBehaviour
         StartCoroutine(GoToScene("NewGame", 1.2f));
     }
     
+    public void GoToGame()
+    {
+        StartCoroutine(GoToScene("Game", 1.2f));
+    }
 }
