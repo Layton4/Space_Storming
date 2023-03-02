@@ -12,18 +12,39 @@ public class MenuManager : MonoBehaviour
 
     public Animator OptionsPanelAnimator;
 
-    public Toggle autosafeToggle;
+    public Toggle[] autosafeToggle;
 
-    private AudioManager AudioManagerScript;
+    public Button continueButton;
+
+    public GameObject SpacePanel;
+
+    private SceneFlow SceneFlowScript;
+
     private void Awake()
     {
-        AudioManagerScript = FindObjectOfType<AudioManager>();
+        SceneFlowScript = FindObjectOfType<SceneFlow>();
+
         foreach (GameObject s in panels) { s.SetActive(false); } //Turn off all the panels
         panels[0].SetActive(true); //Active only the first panel, the MainMenuPanel
     }
     private void Start()
     {
         LoadUserSettings();
+
+        if (DataPersistance.hasPlayed == 0)
+        {
+            continueButton.interactable = false;
+        }
+
+        else
+        {
+            continueButton.interactable = true;
+        }
+    }
+
+    public void NextAutoselect(Button button)
+    {
+        button.Select();
     }
 
     #region SelectionArrows
@@ -47,7 +68,6 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
 
     }
-
     public void OpenOptionPanel(GameObject panel)
     {
         panel.SetActive(true); //Activate the Option Panel
@@ -58,26 +78,37 @@ public class MenuManager : MonoBehaviour
     {
         OptionsPanelAnimator.SetBool("isActivated",false); //Activated the animation of closing the panel
         DataPersistance.SaveForFutureGames();
-        StartCoroutine(WaitAndOff(1.15f, closedPanel));
+        StartCoroutine(WaitAndOff(1.3f, closedPanel));
+    }
+
+    public void NewGameButton()
+    {
+        SpacePanel.SetActive(true);
+        SpacePanel.GetComponent<Animator>().SetBool("active", true);
+        SceneFlowScript.GoToNewGame();
     }
     #endregion
 
-    public void AutoSaveOption(bool value)
+    #region AutosafeConfiguration
+    public void AutoSaveOption(bool value) //When the value of the toggle changes we want to safe in datapersistence if the OnToggle is turn on or off.
     {
         DataPersistance.autosaveToggle = value ? 1 : 0;
-        Debug.Log($"Me cambio a {DataPersistance.autosaveToggle == 1}");
     }
 
-    public void LoadUserSettings()
+    public void LoadUserSettings() //When we arrive to the mainMenu the autosafe options we mark in the previous game is On.
     {
-        autosafeToggle.isOn = PlayerPrefs.GetInt("Autosave_Toggle") == 1;
+        autosafeToggle[PlayerPrefs.GetInt("Autosave_Toggle",1)].isOn = true;
+        DataPersistance.hasPlayed = PlayerPrefs.GetInt("Has_Played", 0);
     }
+    #endregion
 
+    #region Corroutines
     IEnumerator WaitAndOff(float timeToWait, GameObject s)
     {
         yield return new WaitForSeconds(timeToWait);
         s.SetActive(false);
     }
 
+    #endregion
 
 }

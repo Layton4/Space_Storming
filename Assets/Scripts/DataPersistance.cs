@@ -14,6 +14,9 @@ public class DataPersistance
 
     //Autosafe
     public static int autosaveToggle;
+
+    //There is data
+    public static int hasPlayed;
     #endregion
 
     public static void SaveForFutureGames()
@@ -26,6 +29,9 @@ public class DataPersistance
 
         //Autosave Settings
         PlayerPrefs.SetInt("Autosave_Toggle", autosaveToggle);
+
+        //There is data
+        PlayerPrefs.SetInt("Has_Played", hasPlayed);
     }
 
 }

@@ -7,6 +7,7 @@ using TMPro;
 
 public class AudioManager : MonoBehaviour
 {
+
     #region OptionsComponents
     public Slider sfxSlider;
     public Slider musicSlider;
@@ -18,21 +19,13 @@ public class AudioManager : MonoBehaviour
 
     public const string mixerMusic = "MusicVolume";
     public const string mixerSFX = "SFXVolume";
+
     #endregion
 
 
     #region OptionsVolumeChanges
-    public void VolumeChange()
-    {
-        DataPersistance.sfxVolume = sfxSlider.value;
-        DataPersistance.musicVolume = musicSlider.value;
-    }
-
-    public void VolumeToggles()
-    {
-        DataPersistance.sfxToggle = sfxToggle.isOn ? 1 : 0;
-        DataPersistance.musicToggle = musicToggle.isOn ? 1 : 0;
-    }
+   
+    
     #endregion
 
     private void Start()
@@ -40,39 +33,37 @@ public class AudioManager : MonoBehaviour
         LoadVolumeSettings();
     }
 
-    public void LoadVolumeSettings()
+    public void LoadVolumeSettings() //When we start to play we want to load the values saved in the last game inside the volume sliders
     {
-        DataPersistance.sfxVolume = PlayerPrefs.GetFloat("SFX_Volume",0.5f);
-        DataPersistance.musicVolume = PlayerPrefs.GetFloat("Music_Volume", 0.5f);
+        sfxSlider.value = PlayerPrefs.GetFloat("SFX_Volume", 0.5f);
+        musicSlider.value = PlayerPrefs.GetFloat("Music_Volume", 0.5f);
 
-        DataPersistance.sfxToggle = PlayerPrefs.GetInt("SFX_Toggle", 1);
-        DataPersistance.musicToggle = PlayerPrefs.GetInt("Music_Toggle", 1);
-
-        //Once we have the data of playerprefs introduced into the DataPersistance vars we pass the data into the options.
-
-        sfxSlider.value = DataPersistance.sfxVolume;
-        musicSlider.value = DataPersistance.musicVolume;
-
-        sfxToggle.isOn = DataPersistance.sfxToggle == 1;
-        musicToggle.isOn = DataPersistance.musicToggle == 1;
+        sfxToggle.isOn = PlayerPrefs.GetInt("SFX_Toggle", 1) == 1;
+        musicToggle.isOn = PlayerPrefs.GetInt("Music_Toggle", 1) == 1;
     }
 
 
     private void OnDisable()
     {
-        PlayerPrefs.SetFloat(AudioManager.mixerMusic, musicSlider.value);
-        PlayerPrefs.SetFloat(AudioManager.mixerSFX, sfxSlider.value);
+        PlayerPrefs.SetFloat(mixerMusic, musicSlider.value);
+        PlayerPrefs.SetFloat(mixerSFX, sfxSlider.value);
     }
 
-    public void SetMusicVolume(float value)
+    public void SetMusicVolume(float value)  //When we change the value of the Music slider this value is sended to the audomixer and saved in Data persistence.
     {
         Mixer.SetFloat(mixerMusic, Mathf.Log10(value) * 20);
         DataPersistance.musicVolume = musicSlider.value;
     }
 
-    public void SetSFXVolume(float value)
+    public void SetSFXVolume(float value)  //When we change the value of the SFX slider this value is sended to the audomixer and saved in Data persistence.
     {
         Mixer.SetFloat(mixerSFX, Mathf.Log10(value) * 20);
         DataPersistance.sfxVolume= sfxSlider.value;
     }
+    public void VolumeToggles()
+    {
+        DataPersistance.sfxToggle = sfxToggle.isOn ? 1 : 0;
+        DataPersistance.musicToggle = musicToggle.isOn ? 1 : 0;
+    }
+
 }
