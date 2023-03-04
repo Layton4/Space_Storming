@@ -77,10 +77,10 @@ public class PlayerController : MonoBehaviour
             //isOnTrigger = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape))
+        /*if(Input.GetKeyDown(KeyCode.Escape))
         {
             gameManagerScript.OpenOptionPanel();
-        }
+        }*/
     }
 
     private void FixedUpdate()

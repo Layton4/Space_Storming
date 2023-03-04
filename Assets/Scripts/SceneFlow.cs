@@ -20,4 +20,5 @@ public class SceneFlow : MonoBehaviour
     {
         StartCoroutine(GoToScene("Game", 1.2f));
     }
+
 }
