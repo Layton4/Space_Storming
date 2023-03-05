@@ -17,6 +17,8 @@ public class DataPersistance
 
     //There is data
     public static int hasPlayed;
+
+    public static int piecesRemain = 4;
     #endregion
 
     public static void SaveForFutureGames()
@@ -32,6 +34,8 @@ public class DataPersistance
 
         //There is data
         PlayerPrefs.SetInt("Has_Played", hasPlayed);
+
+        PlayerPrefs.SetInt("PiecesRemain", piecesRemain);
     }
 
 }

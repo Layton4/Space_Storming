@@ -55,9 +55,6 @@ public class PlayerController : MonoBehaviour
     {
         isWalking = false;
 
-
-        Movement();
-
         if(Input.GetKeyDown(KeyCode.Space) && canShot)
         {
 
@@ -72,15 +69,9 @@ public class PlayerController : MonoBehaviour
 
             DoorAnimator.SetBool("isOpen", true);
 
-            gameManagerScript.openPanel = true;
-            gameManagerScript.closePanel = false;
             //isOnTrigger = false;
         }
 
-        /*if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            gameManagerScript.OpenOptionPanel();
-        }*/
     }
 
     private void FixedUpdate()
@@ -97,26 +88,6 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetFloat(LASTH, lastDirection.x);
         playerAnimator.SetFloat(LASTV, lastDirection.y);
 
-    }
-
-    private void Movement()
-    {
-        xInput = Input.GetAxisRaw(HORIZONTAL);
-        yInput = Input.GetAxisRaw(VERTICAL);
-
-        if (Mathf.Abs(xInput) > inputTol)
-        {
-            isWalking = true;
-            lastDirection = new Vector2(xInput, 0);
-        }
-
-        if (Mathf.Abs(yInput) > inputTol)
-        {
-            isWalking = true;
-            lastDirection = new Vector2(0, yInput);
-        }
-
-        moveDirection = new Vector2(xInput, yInput).normalized * speed;
     }
 
     public IEnumerator ShotCooldown()
