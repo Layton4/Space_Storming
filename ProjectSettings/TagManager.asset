@@ -7,11 +7,12 @@ TagManager:
   - Ground
   - Wall
   - Door
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
