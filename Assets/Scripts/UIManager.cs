@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor;
 
 public class UIManager : MonoBehaviour
 {
@@ -32,9 +33,17 @@ public class UIManager : MonoBehaviour
 
     public int pieces = 3;
 
+    public bool isPaused;
+
+    private GameObject EventSyst;
+
+    public GameObject filledInventoryText;
 
     private void Awake()
     {
+        EventSyst = GameObject.Find("EventSystem");
+
+        filledInventoryText.SetActive(false);
         TabletAnimator.gameObject.SetActive(true);
 
         InventoryItemsInts.Add(0);
@@ -68,30 +77,10 @@ public class UIManager : MonoBehaviour
             panels[1].SetActive(true);
         }
 
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-
-            if(firstSlotEmpty < slots.Length)
-            {
-                if(currentelementindx >= 3)
-                {
-                    currentelementindx = 3;
-                }
-                InventoryItemsInts[firstSlotEmpty] = currentelementindx;
-                UpdateInventory();
-                firstSlotEmpty++;
-                currentelementindx++;
-            }
-
-            else
-            {
-                Debug.Log("Tienes el inventario Lleno, ve a la base a entregar las piezas que tengas");
-            }
-        }
-
         if(Input.GetKeyDown(KeyCode.I))
         {
             TabletAnimator.SetBool("Inventory", true);
+            isPaused = true;
         }
 
         if(Input.GetKeyDown(KeyCode.X))
@@ -105,6 +94,11 @@ public class UIManager : MonoBehaviour
     {
         TabletAnimator.SetBool("Options", false);
         TabletAnimator.SetBool("Inventory", false);
+        decitionPanel.SetActive(false);
+        isPaused = false;
+
+        EventSyst.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+
     }
 
     public void GoMenuButton()
@@ -128,6 +122,21 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void AddItemToInventory(int itemInt)
+    {
+        if (firstSlotEmpty < slots.Length)
+        {
+            InventoryItemsInts[firstSlotEmpty] = itemInt;
+            UpdateInventory();
+            firstSlotEmpty++;
+        }
+
+        else
+        {
+            StartCoroutine(ApearWaitAndOff(filledInventoryText, 2f));
+            Debug.Log("Tienes el inventario Lleno, ve a la base a entregar las piezas que tengas bro!");
+        }
+    }
     public void SelectInventoryItem(int slotint)
     {
         decitionPanel.SetActive(true);
@@ -175,7 +184,14 @@ public class UIManager : MonoBehaviour
         {
             Debug.Log($"Return when you find more pieces acrossthe spaceship, we need {DataPersistance.piecesRemain} more to fix the capsule");
         }
-        
+   
+    }
+
+    IEnumerator ApearWaitAndOff(GameObject thing, float timer)
+    {
+        thing.SetActive(true);
+        yield return new WaitForSeconds(timer);
+        thing.SetActive(false);
     }
 
 }

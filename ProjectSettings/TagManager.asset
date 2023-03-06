@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - Door
   - Bullet
+  - Snake
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Snake
   - 
   - 
   - 
@@ -42,6 +44,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UnderDefault
+    uniqueID: 3650847953
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: OverDefault
+    uniqueID: 3931030823
     locked: 0

@@ -26,8 +26,13 @@ public class PlayerControler : MonoBehaviour
     private float shotTimeCounter;
 
     private GameManager gameManagerScript;
+    private UIManager uiManagerScript;
+
+
     private void Awake()
     {
+        uiManagerScript = FindObjectOfType<UIManager>();
+
         _animator = GetComponent<Animator>();
         _playerRigidbody = GetComponent<Rigidbody2D>();
 
@@ -37,40 +42,40 @@ public class PlayerControler : MonoBehaviour
     }
     void Update()
     {
-        isWalking = false;
-        if(!canMove)
+        if(uiManagerScript.isPaused == false)
         {
-            return;
-        }
-
-        yInput = Input.GetAxisRaw(VERTICAL);
-        xInput = Input.GetAxisRaw(HORIZONTAL);
-
-        if (isShooting)
-        {
-            shotTimeCounter -= Time.deltaTime;
-            if(shotTimeCounter < 0)
+            isWalking = false;
+            if (!canMove)
             {
-                isShooting = false;
+                return;
             }
-        }
 
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            isShooting = true;
-            shotTimeCounter = shotTime;
-            gameManagerScript.Prepareshot(gameObject.transform.GetChild(0));
-        }
+            yInput = Input.GetAxisRaw(VERTICAL);
+            xInput = Input.GetAxisRaw(HORIZONTAL);
 
-        else
-        {
-            Movement();
-        }
+            if (isShooting)
+            {
+                shotTimeCounter -= Time.deltaTime;
+                if (shotTimeCounter < 0)
+                {
+                    isShooting = false;
+                }
+            }
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            isDead = true;
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                isShooting = true;
+                shotTimeCounter = shotTime;
+                gameManagerScript.Prepareshot(gameObject.transform.GetChild(0));
+            }
+
+            else
+            {
+                Movement();
+            }
+
         }
+        
 
     }
 
@@ -94,7 +99,6 @@ public class PlayerControler : MonoBehaviour
 
         
     }
-
 
     public void Movement()
     {

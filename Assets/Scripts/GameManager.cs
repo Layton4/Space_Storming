@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private int numOfBullets = 5;
     private int currentBullet;
 
+    public Transform respawnPoint;
+    public GameObject PlayerPrefab;
     private void Awake()
     {
        
@@ -27,6 +29,12 @@ public class GameManager : MonoBehaviour
         {
             bullet.SetActive(false);
         }
+
+    }
+
+    private void Update()
+    {
+
     }
 
     public void Prepareshot(Transform p)
