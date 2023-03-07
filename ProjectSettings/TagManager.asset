@@ -60,6 +60,9 @@ TagManager:
   - name: OverDefault
     uniqueID: 3931030823
     locked: 0
+  - name: Foreground2
+    uniqueID: 1090472189
+    locked: 0
   - name: Foreground
     uniqueID: 1106898941
     locked: 0
