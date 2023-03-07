@@ -29,6 +29,7 @@ public class PlayerControler : MonoBehaviour
     private UIManager uiManagerScript;
 
     private DialogueManager dialogueManagerScript;
+
     private void Awake()
     {
         dialogueManagerScript = FindObjectOfType<DialogueManager>();
@@ -40,6 +41,13 @@ public class PlayerControler : MonoBehaviour
         gameManagerScript = FindObjectOfType<GameManager>();
 
         lastDirection = Vector2.right;
+        canMove = true;
+
+    }
+
+    private void Start()
+    {
+        transform.position = new Vector3(DataPersistance.playerXPos, DataPersistance.playerYPos, transform.position.z);
     }
     void Update()
     {

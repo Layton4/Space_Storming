@@ -83,10 +83,21 @@ public class MenuManager : MonoBehaviour
 
     public void NewGameButton()
     {
+        NewGamePersistance();
         SpacePanel.SetActive(true);
         SpacePanel.GetComponent<Animator>().SetBool("active", true);
         SceneFlowScript.GoToNewGame();
+
     }
+
+
+    public void ContinueButton()
+    {
+        SpacePanel.SetActive(true);
+        SpacePanel.GetComponent<Animator>().SetBool("active", true);
+        SceneFlowScript.GoToGame();
+    }
+
     #endregion
 
     #region AutosafeConfiguration
@@ -99,6 +110,60 @@ public class MenuManager : MonoBehaviour
     {
         autosafeToggle[PlayerPrefs.GetInt("Autosave_Toggle",1)].isOn = true;
         DataPersistance.hasPlayed = PlayerPrefs.GetInt("Has_Played", 0);
+
+        DataPersistance.piecesRemain = PlayerPrefs.GetInt("PiecesRemain", 4);
+
+        DataPersistance.inventory1 = PlayerPrefs.GetInt("Inventory1", 0);
+        DataPersistance.inventory2 = PlayerPrefs.GetInt("Inventory2", 0);
+        DataPersistance.inventory3 = PlayerPrefs.GetInt("Inventory3", 0);
+        DataPersistance.inventory4 = PlayerPrefs.GetInt("Inventory4", 0);
+        DataPersistance.inventory5 = PlayerPrefs.GetInt("Inventory5", 0);
+
+        DataPersistance.piece1 = PlayerPrefs.GetInt("Piece1", 0);
+        DataPersistance.piece2 = PlayerPrefs.GetInt("Piece2", 0);
+        DataPersistance.piece3 = PlayerPrefs.GetInt("Piece3", 0);
+        DataPersistance.piece4 = PlayerPrefs.GetInt("Piece4", 0);
+
+        DataPersistance.item1 = PlayerPrefs.GetInt("Item1", 0);
+        DataPersistance.item2 = PlayerPrefs.GetInt("Item2", 0);
+        DataPersistance.item3 = PlayerPrefs.GetInt("Item3", 0);
+        DataPersistance.item4 = PlayerPrefs.GetInt("Item4", 0);
+
+        DataPersistance.Dialogue1Done = PlayerPrefs.GetInt("Dialogue1Done", 0);
+        DataPersistance.Dialogue3Done = PlayerPrefs.GetInt("Dialogue3Done", 0);
+
+        DataPersistance.playerXPos = PlayerPrefs.GetFloat("PlayerXPos", 0);
+        DataPersistance.playerYPos = PlayerPrefs.GetFloat("PlayerYPos", 0);
+
+    }
+
+    public void NewGamePersistance()
+    {
+        autosafeToggle[PlayerPrefs.GetInt("Autosave_Toggle", 1)].isOn = true;
+        DataPersistance.hasPlayed = PlayerPrefs.GetInt("Has_Played", 0);
+        DataPersistance.piecesRemain = 4;
+
+        DataPersistance.inventory1 = 0;
+        DataPersistance.inventory2 = 0;
+        DataPersistance.inventory3 = 0;
+        DataPersistance.inventory4 = 0;
+        DataPersistance.inventory5 = 0;
+
+        DataPersistance.piece1 = 0;
+        DataPersistance.piece2 = 0;
+        DataPersistance.piece3 = 0;
+        DataPersistance.piece4 = 0;
+
+        DataPersistance.item1 = 0;
+        DataPersistance.item2 = 0;
+        DataPersistance.item3 = 0;
+        DataPersistance.item4 = 0;
+
+        DataPersistance.Dialogue1Done = 0;
+        DataPersistance.Dialogue3Done = 0;
+
+        DataPersistance.playerXPos = 0f;
+        DataPersistance.playerYPos = 0;
     }
     #endregion
 

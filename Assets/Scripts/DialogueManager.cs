@@ -37,7 +37,10 @@ public class DialogueManager : MonoBehaviour
     }
     void Start()
     {
-        StartCoroutine(IntroductionDialogue());
+        if(DataPersistance.Dialogue1Done == 0)
+        {
+            StartCoroutine(IntroductionDialogue());
+        }
     }
    
     IEnumerator Letters()
@@ -72,6 +75,14 @@ public class DialogueManager : MonoBehaviour
                 dialogueBoxAnimator.SetBool("isTalking", false);
                 dialogueTextBox.text = "";
                 playerControllerScript.canMove = true;
+
+                if(currentDialogueBox == 0)
+                {
+                    DataPersistance.hasPlayed = 1;
+                    DataPersistance.Dialogue1Done = 1;
+                    DataPersistance.SaveForFutureGames();
+                }
+
             }
         }
 
@@ -101,6 +112,7 @@ public class DialogueManager : MonoBehaviour
 
         dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
         StartCoroutine(Letters());
+
     }
 
 

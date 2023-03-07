@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BulletLogic : MonoBehaviour
 {
-    public Vector3 moveDirection;
-    private float speed = 7f;
+    public ParticleSystem bulletParticles;
+    private Vector3 offsetAngle = new Vector3(0, 90, 0);
+    private float speed = 14f;
 
 
     private void Update()
@@ -16,6 +17,8 @@ public class BulletLogic : MonoBehaviour
     {
         if(othercollider2D.gameObject.CompareTag("Wall"))
         {
+            Instantiate(bulletParticles, transform.position, bulletParticles.transform.rotation);
+            Debug.Log("Toma particulas");
             gameObject.SetActive(false);
         }
     }
@@ -24,6 +27,7 @@ public class BulletLogic : MonoBehaviour
     {
         if (othercollider2D.gameObject.CompareTag("Wall"))
         {
+           
             gameObject.SetActive(false);
         }
     }

@@ -39,6 +39,21 @@ public class UIManager : MonoBehaviour
 
     public GameObject filledInventoryText;
 
+    public List<int> inventoryPersistance = new List<int>();
+
+    public GameObject[] importantPiece;
+
+    public List<int> pickedPieces = new List<int>();
+
+    public List<int> pickedItems = new List<int>();
+
+    private int firstPieceInt = 5;
+    private int lastPieceInt = 8;
+
+    public GameObject[] ItemsInMap;
+
+    public GameManager gameManagerScript;
+
     private void Awake()
     {
         EventSyst = GameObject.Find("EventSystem");
@@ -52,12 +67,30 @@ public class UIManager : MonoBehaviour
         InventoryItemsInts.Add(0);
         InventoryItemsInts.Add(0);
         firstSlotEmpty = InventoryItemsInts.IndexOf(0);
-
-        UpdateInventory();
-
         sceneFlowScript = FindObjectOfType<SceneFlow>();
         TabletAnimator.SetBool("Options", false);
         TabletAnimator.SetBool("GoMenu", false);
+
+        pickedPieces.Add(DataPersistance.piece1);
+        pickedPieces.Add(DataPersistance.piece2);
+        pickedPieces.Add(DataPersistance.piece3);
+        pickedPieces.Add(DataPersistance.piece4);
+
+        pickedItems.Add(DataPersistance.item1);
+        pickedItems.Add(DataPersistance.item2);
+        pickedItems.Add(DataPersistance.item3);
+        pickedItems.Add(DataPersistance.item4);
+
+        gameManagerScript = FindObjectOfType<GameManager>();
+    }
+
+    private void Start()
+    {
+        LoadInventory();
+        UpdateInventory();
+        HidePickedPieces();
+        HidePickedItems();
+
     }
     void Update()
     {
@@ -102,6 +135,10 @@ public class UIManager : MonoBehaviour
     public void GoMenuButton()
     {
         TabletAnimator.SetBool("GoMenu", true);
+
+        gameManagerScript.SafeLastPosition();
+        DataPersistance.SaveForFutureGames();
+
         StartCoroutine(sceneFlowScript.GoToScene("Menu", 1.1f));
     }
 
@@ -118,6 +155,8 @@ public class UIManager : MonoBehaviour
                 slotButton.interactable = false;
             }
         }
+        SaveInventory();
+
     }
 
     public void AddItemToInventory(int itemInt)
@@ -127,6 +166,22 @@ public class UIManager : MonoBehaviour
             InventoryItemsInts[firstSlotEmpty] = itemInt;
             UpdateInventory();
             firstSlotEmpty++;
+
+            if(itemInt >= firstPieceInt && itemInt <= lastPieceInt)
+            {
+                int convertedint = itemInt - 5;
+                pickedPieces[convertedint] = 1;
+                SavePickedPieces();
+            }
+
+            else
+            {
+                int convertedint = itemInt - 1;
+                pickedItems[convertedint] = 1;
+                SavePickedItems();
+            }
+
+            gameManagerScript.SafeLastPosition();
         }
 
         else
@@ -184,11 +239,70 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void RespawnButton()
+    {
+        sceneFlowScript.GoToGame();
+    }
     IEnumerator ApearWaitAndOff(GameObject thing, float timer)
     {
         thing.SetActive(true);
         yield return new WaitForSeconds(timer);
         thing.SetActive(false);
+    }
+
+    public void SaveInventory()
+    {
+        DataPersistance.inventory1 = InventoryItemsInts[0];
+        DataPersistance.inventory2 = InventoryItemsInts[1];
+        DataPersistance.inventory3 = InventoryItemsInts[2];
+        DataPersistance.inventory4 = InventoryItemsInts[3];
+        DataPersistance.inventory5 = InventoryItemsInts[4];
+
+        DataPersistance.SaveForFutureGames();
+    }
+
+    public void LoadInventory()
+    {
+        InventoryItemsInts[0] = DataPersistance.inventory1;
+        InventoryItemsInts[1] = DataPersistance.inventory2;
+        InventoryItemsInts[2] = DataPersistance.inventory3;
+        InventoryItemsInts[3] = DataPersistance.inventory4;
+        InventoryItemsInts[4] = DataPersistance.inventory5;
+    }
+
+    public void HidePickedPieces()
+    {
+        for(int i = 0; i<importantPiece.Length; i++)
+        {
+            importantPiece[i].SetActive(pickedPieces[i] == 0);
+        }
+    }
+
+    public void HidePickedItems()
+    {
+        for(int i = 0; i < ItemsInMap.Length; i++)
+        {
+            ItemsInMap[i].SetActive(pickedItems[i] == 0);
+        }
+    }
+    public void SavePickedPieces()
+    {
+        DataPersistance.piece1 = pickedPieces[0];
+        DataPersistance.piece2 = pickedPieces[1];
+        DataPersistance.piece3 = pickedPieces[2];
+        DataPersistance.piece4 = pickedPieces[3];
+
+        DataPersistance.SaveForFutureGames();
+    }
+
+    public void SavePickedItems()
+    {
+        DataPersistance.item1 = pickedItems[0];
+        DataPersistance.item2 = pickedItems[1];
+        DataPersistance.item3 = pickedItems[2];
+        DataPersistance.item4 = pickedItems[3];
+
+        DataPersistance.SaveForFutureGames();
     }
 
 }

@@ -21,6 +21,29 @@ public class DataPersistance
     public static int piecesRemain = 4;
     #endregion
 
+    public static int inventory1;
+    public static int inventory2;
+    public static int inventory3;
+    public static int inventory4;
+    public static int inventory5;
+
+    public static int piece1;
+    public static int piece2;
+    public static int piece3;
+    public static int piece4;
+
+    public static int item1;
+    public static int item2;
+    public static int item3;
+    public static int item4;
+
+    public static float playerXPos;
+    public static float playerYPos;
+
+
+    public static int Dialogue1Done;
+    public static int Dialogue3Done;
+
     public static void SaveForFutureGames()
     {
         //Volumes Settigns
@@ -36,6 +59,29 @@ public class DataPersistance
         PlayerPrefs.SetInt("Has_Played", hasPlayed);
 
         PlayerPrefs.SetInt("PiecesRemain", piecesRemain);
+        PlayerPrefs.SetInt("Inventory1", inventory1);
+        PlayerPrefs.SetInt("Inventory2", inventory2);
+        PlayerPrefs.SetInt("Inventory3", inventory3);
+        PlayerPrefs.SetInt("Inventory4", inventory4);
+        PlayerPrefs.SetInt("Inventory5", inventory5);
+
+        PlayerPrefs.SetInt("Piece1", piece1);
+        PlayerPrefs.SetInt("Piece2", piece2);
+        PlayerPrefs.SetInt("Piece3", piece3);
+        PlayerPrefs.SetInt("Piece4", piece4);
+
+        PlayerPrefs.SetInt("Item1", item1);
+        PlayerPrefs.SetInt("Item2", item2);
+        PlayerPrefs.SetInt("Item3", item3);
+        PlayerPrefs.SetInt("Item4", item4);
+
+        PlayerPrefs.SetInt("Dialogue1Done", Dialogue1Done);
+        PlayerPrefs.SetInt("Dialogue3Done", Dialogue3Done);
+
+        PlayerPrefs.SetFloat("PlayerXPos", playerXPos);
+
+        PlayerPrefs.SetFloat("PlayerYPos", playerYPos);
+
     }
 
 }

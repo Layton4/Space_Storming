@@ -17,11 +17,15 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private LayerMask PlayerLayer;
     public float rayExtension = 1.6f;
-    private float speed = 1.4f;
+    private float speed = 2.8f;
+
+    private GameManager gameManagerScript;
 
 
     private void Awake()
     {
+        gameManagerScript = FindObjectOfType<GameManager>();
+
         SnakeTrigger = GetComponent<BoxCollider2D>();
         playerControllerScript = FindObjectOfType<PlayerControler>();
         _enemyAnimator = GetComponent<Animator>();
@@ -124,7 +128,7 @@ public class Enemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
         isAttacking = false;
-
+        gameManagerScript.ActivateGameOver();
     }
 
 

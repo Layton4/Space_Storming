@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,13 +16,23 @@ public class GameManager : MonoBehaviour
     private int currentBullet;
 
     public Transform respawnPoint;
-    public GameObject PlayerPrefab;
+
+    public GameObject gameOverPanel;
+
+    public Transform spawnPoint;
+    private GameObject player;
     private void Awake()
     {
-       
+        player = GameObject.Find("Player");
+        player.SetActive(true);
+        player.transform.position = spawnPoint.position;
+
     }
     private void Start()
     {
+        DataPersistance.hasPlayed = 1;
+        DataPersistance.SaveForFutureGames();
+
         for (int i = 0; i < numOfBullets; i++)
         {
 
@@ -47,6 +61,17 @@ public class GameManager : MonoBehaviour
         {
             currentBullet = 0;
         }
+    }
+
+    public void ActivateGameOver()
+    {
+        gameOverPanel.SetActive(true);
+    }
+
+    public void SafeLastPosition()
+    {
+        DataPersistance.playerXPos = player.transform.position.x;
+        DataPersistance.playerYPos = player.transform.position.y;
     }
 
 }
