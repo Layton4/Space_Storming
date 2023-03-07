@@ -22,9 +22,11 @@ public class Item : MonoBehaviour
         if(otherCollider.gameObject.CompareTag("Player"))
         {
             uiManagerScript.AddItemToInventory(itemNumber);
-            Instantiate(canvasText, transform.position, transform.rotation);
-
-            Destroy(gameObject);
+            if (uiManagerScript.firstSlotEmpty <= uiManagerScript.slots.Length)
+            {
+                Instantiate(canvasText, transform.position, transform.rotation);
+                gameObject.SetActive(false);
+            }
         }
     }
     

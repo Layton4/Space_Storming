@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Snake
   - Item
+  - radio
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2290593663
+    locked: 0
+  - name: MiddleGround
+    uniqueID: 1233739105
+    locked: 0
   - name: UnderDefault
     uniqueID: 3650847953
     locked: 0
@@ -52,4 +59,10 @@ TagManager:
     locked: 0
   - name: OverDefault
     uniqueID: 3931030823
+    locked: 0
+  - name: Foreground
+    uniqueID: 1106898941
+    locked: 0
+  - name: Details
+    uniqueID: 548699323
     locked: 0

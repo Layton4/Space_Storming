@@ -55,35 +55,33 @@ public class UIManager : MonoBehaviour
 
         UpdateInventory();
 
-        
-
         sceneFlowScript = FindObjectOfType<SceneFlow>();
         TabletAnimator.SetBool("Options", false);
         TabletAnimator.SetBool("GoMenu", false);
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            foreach(GameObject i in panels) { i.SetActive(false); }
+            foreach (GameObject i in panels) { i.SetActive(false); }
             panels[0].SetActive(true);
 
             TabletAnimator.SetBool("Options", true);
         }
 
-        if(Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             foreach (GameObject i in panels) { i.SetActive(false); }
             panels[1].SetActive(true);
         }
 
-        if(Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             TabletAnimator.SetBool("Inventory", true);
             isPaused = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             CheckForPieces();
         }
@@ -115,7 +113,7 @@ public class UIManager : MonoBehaviour
             slotButton.interactable = true;
             slots[i].text = ItemsNames[InventoryItemsInts[i]];
 
-            if(slots[i].text == "")
+            if (slots[i].text == "")
             {
                 slotButton.interactable = false;
             }
@@ -133,6 +131,7 @@ public class UIManager : MonoBehaviour
 
         else
         {
+            firstSlotEmpty = 6;
             StartCoroutine(ApearWaitAndOff(filledInventoryText, 2f));
             Debug.Log("Tienes el inventario Lleno, ve a la base a entregar las piezas que tengas bro!");
         }
@@ -158,24 +157,22 @@ public class UIManager : MonoBehaviour
     public void CheckForPieces()
     {
         newPiecesFound = 0;
-        while(InventoryItemsInts.Contains(pieces))
+
+        for(int i = 5; i <= 8; i++)
         {
-            for (int i = 0; i < inventoryInts.Length; i++)
+            if(InventoryItemsInts.Contains(i))
             {
-                if (InventoryItemsInts[i] > 2)
-                {
-                    newPiecesFound++;
-                    DataPersistance.piecesRemain--;
-                    InventoryItemsInts.RemoveAt(i);
-                    InventoryItemsInts.Add(0);
-                    break;
-                }
+                newPiecesFound++;
+                DataPersistance.piecesRemain--;
+                InventoryItemsInts.Remove(i);
+                InventoryItemsInts.Add(0);
             }
         }
+        
 
         firstSlotEmpty = InventoryItemsInts.IndexOf(0);
         UpdateInventory();
-        if(newPiecesFound > 0)
+        if (newPiecesFound > 0)
         {
             Debug.Log($"Nice! you found {newPiecesFound} new pieces, we only need {DataPersistance.piecesRemain} more to get out of here!");
         }
@@ -184,7 +181,7 @@ public class UIManager : MonoBehaviour
         {
             Debug.Log($"Return when you find more pieces acrossthe spaceship, we need {DataPersistance.piecesRemain} more to fix the capsule");
         }
-   
+
     }
 
     IEnumerator ApearWaitAndOff(GameObject thing, float timer)

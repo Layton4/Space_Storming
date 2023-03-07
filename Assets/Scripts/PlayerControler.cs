@@ -28,9 +28,10 @@ public class PlayerControler : MonoBehaviour
     private GameManager gameManagerScript;
     private UIManager uiManagerScript;
 
-
+    private DialogueManager dialogueManagerScript;
     private void Awake()
     {
+        dialogueManagerScript = FindObjectOfType<DialogueManager>();
         uiManagerScript = FindObjectOfType<UIManager>();
 
         _animator = GetComponent<Animator>();
@@ -121,4 +122,13 @@ public class PlayerControler : MonoBehaviour
 
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("radio"))
+        {
+            StartCoroutine(dialogueManagerScript.PickRadioDialogue());
+        }
+    }
+
 }
