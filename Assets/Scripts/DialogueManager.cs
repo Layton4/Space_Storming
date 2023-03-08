@@ -22,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     public string[] aboutPiecesDialogue;
     public string[] lookForPiecesDialogue;
 
+    public string[] ItemDialogues;
+
 
     private PlayerControler playerControllerScript;
 
@@ -33,6 +35,8 @@ public class DialogueManager : MonoBehaviour
     public int currentDialogueBox;
 
     private UIManager uiManagerScript;
+
+
 
     private void Awake()
     {
@@ -198,6 +202,24 @@ public class DialogueManager : MonoBehaviour
 
         nextButton.gameObject.SetActive(true);
         uiManagerScript.CheckForPieces();
+        StartCoroutine(Letters());
+
+    }
+
+    public IEnumerator ItemDialogue(int i)
+    {
+        dialogueTextBox.text = "";
+
+        currentDialogueBox = 5;
+        CurrentDialogueText = i;
+
+        characterSpriteBox.sprite = charactersSprites[0];
+        characterNameBox.text = characterNames[0];
+
+        dialogueBoxAnimator.SetBool("isTalking", true);
+        yield return new WaitForSeconds(1.1f);
+        nextButton.gameObject.SetActive(true);
+        dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
         StartCoroutine(Letters());
 
     }

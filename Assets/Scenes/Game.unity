@@ -392,7 +392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -623,7 +623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -705,7 +705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -782,7 +782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -864,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1032,7 +1032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1118,7 +1118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1334,7 +1334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1496,7 +1496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1578,7 +1578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1696,7 +1696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1782,7 +1782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1868,7 +1868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -1929,6 +1929,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &265661115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3888872014183931001, guid: c52a364ea8054cc42a801f10d64f07f5, type: 3}
+  m_PrefabInstance: {fileID: 431373930}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &278825773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,7 +3187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -3397,7 +3402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -3479,7 +3484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -3695,7 +3700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -3991,7 +3996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -4348,7 +4353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -4430,7 +4435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -4541,6 +4546,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3888872014183930884, guid: c52a364ea8054cc42a801f10d64f07f5, type: 3}
   m_PrefabInstance: {fileID: 431373930}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &431373937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265661115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7217df633f46024c9535b37c066f493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needAnItem: 0
+  neededItemID: 2
+  CanvasText: {fileID: 0}
 --- !u!1001 &437742836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4598,7 +4618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -5089,7 +5109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -5171,7 +5191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -5521,7 +5541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -5873,7 +5893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -5955,7 +5975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -6212,7 +6232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -6940,7 +6960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -7104,7 +7124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -7482,7 +7502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -7564,7 +7584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -7646,7 +7666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -7728,7 +7748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -7810,7 +7830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -7946,6 +7966,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &626096358 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+  m_PrefabInstance: {fileID: 1293669325}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &636511001
 GameObject:
   m_ObjectHideFlags: 0
@@ -8394,7 +8419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -8476,7 +8501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -8558,7 +8583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -8640,7 +8665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -8961,7 +8986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -9073,6 +9098,11 @@ Transform:
   m_Father: {fileID: 264979981}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &716022106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3888872014183931001, guid: c52a364ea8054cc42a801f10d64f07f5, type: 3}
+  m_PrefabInstance: {fileID: 7105104327607760221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &730120664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9130,7 +9160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -9212,7 +9242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -9294,7 +9324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -9507,7 +9537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -9724,7 +9754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -9890,7 +9920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -10307,7 +10337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -10658,7 +10688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -10740,7 +10770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -11158,7 +11188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -11594,7 +11624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -11676,7 +11706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -11893,7 +11923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -12108,7 +12138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -12476,7 +12506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -12685,7 +12715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -12767,7 +12797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -12849,7 +12879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -12931,7 +12961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -13275,7 +13305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -13357,7 +13387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -13439,7 +13469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -13521,7 +13551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -13685,7 +13715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -13893,7 +13923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -14110,7 +14140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -14192,7 +14222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -14274,7 +14304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -94070,6 +94100,7 @@ MonoBehaviour:
   - I trust in you captain, good luck!
   lookForPiecesDialogue:
   - ExempleText
+  ItemDialogues: []
   isTalking: 0
   CurrentDialogueText: 0
   DialogueAnimDone: 0
@@ -94165,6 +94196,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292205704}
   m_CullTransparentMesh: 0
+--- !u!1001 &1293669325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1347252862}
+    m_Modifications:
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_RootOrder
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -25.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.03166158
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158001, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: rayExtension
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: PlayerLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158014, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_Name
+      value: Snake (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158014, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805074192346158014, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
 --- !u!1001 &1295637596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94222,7 +94326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -94439,7 +94543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -94521,7 +94625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -94730,7 +94834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -94971,6 +95075,7 @@ Transform:
   - {fileID: 1101557765}
   - {fileID: 987608900}
   - {fileID: 172731556}
+  - {fileID: 626096358}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -95416,7 +95521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -95661,7 +95766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -95877,7 +95982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -95959,7 +96064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -96041,7 +96146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -96250,7 +96355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -113631,7 +113736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -113813,9 +113918,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599263061}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 533904011}
@@ -114024,7 +114129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -114138,7 +114243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -114220,7 +114325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -114646,7 +114751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -114728,7 +114833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -114810,7 +114915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -114892,7 +114997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -115154,7 +115259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -115581,7 +115686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -115879,7 +115984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -116131,7 +116236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -116217,7 +116322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -116299,7 +116404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -116467,7 +116572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -116806,7 +116911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -116888,7 +116993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -116970,7 +117075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -117187,7 +117292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -117269,7 +117374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -117355,7 +117460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -117572,7 +117677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -117654,7 +117759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: rayExtension
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1805074192346158005, guid: 87bc9e240579d4f4f965a68cf22602f7, type: 3}
       propertyPath: PlayerLayer.m_Bits
@@ -118254,6 +118359,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3888872014183930884, guid: c52a364ea8054cc42a801f10d64f07f5, type: 3}
   m_PrefabInstance: {fileID: 7105104327607760221}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6296712618883328346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716022106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7217df633f46024c9535b37c066f493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needAnItem: 1
+  neededItemID: 2
+  CanvasText: {fileID: 0}
 --- !u!1001 &7105104327607760221
 PrefabInstance:
   m_ObjectHideFlags: 0
