@@ -8,9 +8,13 @@ public class NPC_Logic : MonoBehaviour
     private GameObject indicativeCanvas;
 
     private bool canTalk;
+    public int intDialogue;
+
+    private DialogueManager dialogueManagerScript;
 
     private void Awake()
     {
+        dialogueManagerScript = FindObjectOfType<DialogueManager>();
         playerControllerScript = FindObjectOfType<PlayerControler>();
 
         indicativeCanvas = transform.GetChild(0).gameObject;
@@ -38,7 +42,12 @@ public class NPC_Logic : MonoBehaviour
         if(canTalk && Input.GetKeyDown(KeyCode.E))
         {
             indicativeCanvas.SetActive(false);
-            Debug.Log("Now we are taking");
+
+            if(intDialogue == 0)
+            {
+                StopAllCoroutines();
+                StartCoroutine(dialogueManagerScript.EnemiesDialogue());
+            }
         }
     }
 

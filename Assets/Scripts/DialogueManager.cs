@@ -17,6 +17,11 @@ public class DialogueManager : MonoBehaviour
 
     public string[] introductionDialogue;
     public string[] radioDialogue;
+    public string[] enemiesDialogue;
+
+    public string[] aboutPiecesDialogue;
+    public string[] NewPiecesDialogue;
+    public string[] GoFindMoreDialogue;
 
     private PlayerControler playerControllerScript;
 
@@ -33,6 +38,10 @@ public class DialogueManager : MonoBehaviour
 
         dialogueBlocs.Add(introductionDialogue);
         dialogueBlocs.Add(radioDialogue);
+        dialogueBlocs.Add(enemiesDialogue);
+        dialogueBlocs.Add(aboutPiecesDialogue);
+        dialogueBlocs.Add(NewPiecesDialogue);
+        dialogueBlocs.Add(GoFindMoreDialogue);
 
     }
     void Start()
@@ -134,6 +143,39 @@ public class DialogueManager : MonoBehaviour
         dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
         StartCoroutine(Letters());
 
+    }
+
+    public IEnumerator EnemiesDialogue()
+    {
+        currentDialogueBox = 2;
+        CurrentDialogueText = 0;
+        characterSpriteBox.sprite = charactersSprites[1];
+        characterNameBox.text = characterNames[1];
+        playerControllerScript.canMove = false;
+        dialogueBoxAnimator.SetBool("isTalking", true);
+
+        yield return new WaitForSeconds(1.1f);
+
+        nextButton.gameObject.SetActive(true);
+        dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
+        StartCoroutine(Letters());
+
+    }
+
+    public IEnumerator AboutThePieces()
+    {
+        currentDialogueBox = 3;
+        CurrentDialogueText = 0;
+        characterSpriteBox.sprite = charactersSprites[1];
+        characterNameBox.text = characterNames[1];
+        playerControllerScript.canMove = false;
+        dialogueBoxAnimator.SetBool("isTalking", true);
+
+        yield return new WaitForSeconds(1.1f);
+
+        nextButton.gameObject.SetActive(true);
+        dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
+        StartCoroutine(Letters());
     }
 
 }

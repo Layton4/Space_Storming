@@ -52,7 +52,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject[] ItemsInMap;
 
-    public GameManager gameManagerScript;
+    private GameManager gameManagerScript;
 
     private void Awake()
     {

@@ -18,15 +18,24 @@ public class GameManager : MonoBehaviour
     public Transform respawnPoint;
 
     public GameObject gameOverPanel;
+    public GameObject DialoguePanel;
+    public GameObject TabletPanel;
 
     public Transform spawnPoint;
     private GameObject player;
+
+    private AudioSource musicAudioSource;
+    public AudioClip gameOverMusic;
     private void Awake()
     {
+        DialoguePanel.SetActive(true);
+        TabletPanel.SetActive(true);
+
+        musicAudioSource = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+
         player = GameObject.Find("Player");
         player.SetActive(true);
         player.transform.position = spawnPoint.position;
-
     }
     private void Start()
     {
@@ -65,6 +74,9 @@ public class GameManager : MonoBehaviour
 
     public void ActivateGameOver()
     {
+        musicAudioSource.Stop();
+        musicAudioSource.PlayOneShot(gameOverMusic);
+
         gameOverPanel.SetActive(true);
     }
 
