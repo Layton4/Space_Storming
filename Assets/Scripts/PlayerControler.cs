@@ -30,8 +30,13 @@ public class PlayerControler : MonoBehaviour
 
     private DialogueManager dialogueManagerScript;
 
+    public AudioClip shootSound;
+    private AudioSource sfxAudiosource;
+
     private void Awake()
     {
+        sfxAudiosource = GameObject.Find("AudioManager").GetComponent<AudioSource>();
+
         dialogueManagerScript = FindObjectOfType<DialogueManager>();
         uiManagerScript = FindObjectOfType<UIManager>();
 
@@ -74,6 +79,7 @@ public class PlayerControler : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Space))
             {
                 isShooting = true;
+                sfxAudiosource.PlayOneShot(shootSound);
                 shotTimeCounter = shotTime;
                 gameManagerScript.Prepareshot(gameObject.transform.GetChild(0));
             }
