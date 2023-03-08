@@ -87,6 +87,7 @@ public class DialogueManager : MonoBehaviour
         DialogueAnimDone = true;
     }
 
+   
     public void NextButton()
     {
         if(DialogueAnimDone)
@@ -128,6 +129,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    #region Dialogues Coroutines
     IEnumerator IntroductionDialogue()
     {
         currentDialogueBox = 0;
@@ -268,5 +270,5 @@ public class DialogueManager : MonoBehaviour
         finalDialogue = true;
 
     }
-
+    #endregion
 }
