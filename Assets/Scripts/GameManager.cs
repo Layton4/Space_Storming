@@ -26,6 +26,11 @@ public class GameManager : MonoBehaviour
 
     private AudioSource musicAudioSource;
     public AudioClip gameOverMusic;
+
+    public GameObject[] doors;
+    private List<int> doorsPersistance = new List<int>();
+
+
     private void Awake()
     {
         DialoguePanel.SetActive(true);
@@ -41,6 +46,8 @@ public class GameManager : MonoBehaviour
     {
         DataPersistance.hasPlayed = 1;
         DataPersistance.SaveForFutureGames();
+
+        LoadOpenDoors();
 
         for (int i = 0; i < numOfBullets; i++)
         {
@@ -79,6 +86,22 @@ public class GameManager : MonoBehaviour
     {
         DataPersistance.playerXPos = player.transform.position.x;
         DataPersistance.playerYPos = player.transform.position.y;
+    }
+
+
+    public void LoadOpenDoors()
+    {
+        doorsPersistance.Add(DataPersistance.door1);
+        doorsPersistance.Add(DataPersistance.door2);
+        doorsPersistance.Add(DataPersistance.door3);
+        doorsPersistance.Add(DataPersistance.door4);
+        doorsPersistance.Add(DataPersistance.door5);
+        doorsPersistance.Add(DataPersistance.door6);
+
+        for (int i = 0; i < doors.Length; i++)
+        {
+            doors[i].GetComponent<Animator>().SetBool("isOpen",(doorsPersistance[i] == 1));
+        }
     }
 
 }

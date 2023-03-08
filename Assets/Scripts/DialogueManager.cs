@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -22,7 +23,11 @@ public class DialogueManager : MonoBehaviour
     public string[] aboutPiecesDialogue;
     public string[] lookForPiecesDialogue;
 
-    public string[] ItemDialogues;
+    public string[] NotHaveKeycard2;
+    public string[] NotHaveKeycard1;
+    public string[] NotHaveTheLever;
+
+    public string[] finalDialogueText;
 
 
     private PlayerControler playerControllerScript;
@@ -36,10 +41,14 @@ public class DialogueManager : MonoBehaviour
 
     private UIManager uiManagerScript;
 
+    public bool finalDialogue;
+
+    private SceneFlow sceneFlowManager;
 
 
     private void Awake()
     {
+        sceneFlowManager = FindObjectOfType<SceneFlow>();
         playerControllerScript = FindObjectOfType<PlayerControler>();
         uiManagerScript = FindObjectOfType<UIManager>();
 
@@ -48,6 +57,10 @@ public class DialogueManager : MonoBehaviour
         dialogueBlocs.Add(enemiesDialogue);
         dialogueBlocs.Add(aboutPiecesDialogue);
         dialogueBlocs.Add(lookForPiecesDialogue);
+        dialogueBlocs.Add(NotHaveKeycard1);
+        dialogueBlocs.Add(NotHaveKeycard2);
+        dialogueBlocs.Add(NotHaveTheLever);
+        dialogueBlocs.Add(finalDialogueText);
 
     }
     void Start()
@@ -90,6 +103,8 @@ public class DialogueManager : MonoBehaviour
                 dialogueBoxAnimator.SetBool("isTalking", false);
                 dialogueTextBox.text = "";
                 playerControllerScript.canMove = true;
+
+                if(finalDialogue) { StartCoroutine(sceneFlowManager.GoToScene("Credits", 2f));}
 
                 if(currentDialogueBox == 0)
                 {
@@ -206,21 +221,51 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public IEnumerator ItemDialogue(int i)
+   public IEnumerator DoorClosedDialogue(int i)
     {
         dialogueTextBox.text = "";
 
-        currentDialogueBox = 5;
-        CurrentDialogueText = i;
+        CurrentDialogueText = 0;
+        if(i == 1)
+        {
+            currentDialogueBox = 7;
+        }
+
+        else
+        {
+            currentDialogueBox = i + 2;
+        }
 
         characterSpriteBox.sprite = charactersSprites[0];
         characterNameBox.text = characterNames[0];
-
+        playerControllerScript.canMove = false;
         dialogueBoxAnimator.SetBool("isTalking", true);
+
         yield return new WaitForSeconds(1.1f);
+
         nextButton.gameObject.SetActive(true);
         dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
         StartCoroutine(Letters());
+    }
+
+    public IEnumerator FinalDialogue()
+    {
+        dialogueTextBox.text = "";
+        currentDialogueBox = 8;
+        CurrentDialogueText = 0;
+
+        characterSpriteBox.sprite = charactersSprites[1];
+        characterNameBox.text = characterNames[1];
+        playerControllerScript.canMove = false;
+        dialogueBoxAnimator.SetBool("isTalking", true);
+
+        yield return new WaitForSeconds(1.1f);
+
+        nextButton.gameObject.SetActive(true);
+        dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
+        StartCoroutine(Letters());
+
+        finalDialogue = true;
 
     }
 

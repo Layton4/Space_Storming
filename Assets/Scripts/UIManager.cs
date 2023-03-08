@@ -116,11 +116,6 @@ public class UIManager : MonoBehaviour
             isPaused = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            CheckForPieces();
-        }
-
     }
 
     public void BackButton()

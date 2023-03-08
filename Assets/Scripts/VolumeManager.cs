@@ -6,9 +6,7 @@ using UnityEngine.Audio;
 
 public class VolumeManager : MonoBehaviour
 {
-    public static VolumeManager Instance;
-
-    public AudioMixer Mixer;
+   /* public AudioMixer Mixer;
 
     public const string MusicKey = "MusicVolume";
     public const string SFXKey = "SFXVolume";
@@ -25,5 +23,5 @@ public class VolumeManager : MonoBehaviour
 
         Mixer.SetFloat(MusicKey, Mathf.Log10(musicVolume) * 20);
         Mixer.SetFloat(SFXKey, Mathf.Log10(sfxVolume) * 20);
-    }
+    }*/
 }

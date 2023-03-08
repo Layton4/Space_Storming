@@ -45,6 +45,13 @@ public class DataPersistance
     public static int Dialogue3Done;
     public static int DialoguePiecesDone;
 
+    public static int door1;
+    public static int door2;
+    public static int door3;
+    public static int door4;
+    public static int door5;
+    public static int door6;
+
     public static void SaveForFutureGames()
     {
         //Volumes Settigns
@@ -84,6 +91,14 @@ public class DataPersistance
         PlayerPrefs.SetFloat("PlayerYPos", playerYPos);
 
         PlayerPrefs.SetFloat("PiecesDialogueDone", DialoguePiecesDone);
+
+        PlayerPrefs.SetInt("Door1", door1);
+        PlayerPrefs.SetInt("Door2", door2);
+        PlayerPrefs.SetInt("Door3", door3);
+        PlayerPrefs.SetInt("Door4", door4);
+        PlayerPrefs.SetInt("Door5", door5);
+        PlayerPrefs.SetInt("Door6", door6);
+
     }
 
 }

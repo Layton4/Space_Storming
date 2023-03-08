@@ -6,26 +6,24 @@ using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject[] arrowsSprites;
-
-    public GameObject[] panels;
-
-    public Animator OptionsPanelAnimator;
-
     public Toggle[] autosafeToggle;
+
+    public GameObject[] arrowsSprites;
 
     public Button continueButton;
 
+    //Animators
+    public Animator OptionsPanelAnimator;
+
+    //Panels
     public GameObject SpacePanel;
 
+    //Scripts:
     private SceneFlow SceneFlowScript;
 
     private void Awake()
     {
         SceneFlowScript = FindObjectOfType<SceneFlow>();
-
-        foreach (GameObject s in panels) { s.SetActive(false); } //Turn off all the panels
-        panels[0].SetActive(true); //Active only the first panel, the MainMenuPanel
     }
     private void Start()
     {
@@ -138,6 +136,13 @@ public class MenuManager : MonoBehaviour
 
 
         DataPersistance.DialoguePiecesDone = PlayerPrefs.GetInt("PiecesDialogueDone", 0);
+
+        DataPersistance.door1 = PlayerPrefs.GetInt("Door1", 0);
+        DataPersistance.door2 = PlayerPrefs.GetInt("Door2", 0);
+        DataPersistance.door3 = PlayerPrefs.GetInt("Door3", 0);
+        DataPersistance.door4 = PlayerPrefs.GetInt("Door4", 0);
+        DataPersistance.door5 = PlayerPrefs.GetInt("Door5", 0);
+        DataPersistance.door6 = PlayerPrefs.GetInt("Door6", 0);
     }
 
     public void NewGamePersistance()
@@ -169,6 +174,13 @@ public class MenuManager : MonoBehaviour
         DataPersistance.playerYPos = 0;
 
         DataPersistance.DialoguePiecesDone = 0;
+
+        DataPersistance.door1 = 0;
+        DataPersistance.door2 = 0;
+        DataPersistance.door3 = 0;
+        DataPersistance.door4 = 0;
+        DataPersistance.door5 = 0;
+        DataPersistance.door6 = 0;
     }
     #endregion
 

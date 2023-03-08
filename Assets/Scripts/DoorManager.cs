@@ -15,47 +15,58 @@ public class DoorManager : MonoBehaviour
 
     private Animator doorAnimator;
 
+    private GameObject indicativeCanvas;
 
+    
+    
 
     private void Awake()
     {
+        indicativeCanvas = gameObject.transform.GetChild(0).gameObject;
+
         dialogueManagerScript = FindObjectOfType<DialogueManager>();
         uiManagerScript = FindObjectOfType<UIManager>();
         doorAnimator = gameObject.GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        indicativeCanvas.SetActive(false);
+    }
     private void Update()
     {
-        if (itemInInventory)
+        if (needAnItem && Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (itemInInventory)
             {
                 doorAnimator.SetBool("isOpen", true);
             }
-        }   
+            else
+            {
+                StopAllCoroutines();
+                StartCoroutine(dialogueManagerScript.DoorClosedDialogue(neededItemID));
+            }
+        }
+  
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         if(otherCollider.gameObject.CompareTag("Player"))
         {
-            if(needAnItem)
+            needAnItem = true;
+            indicativeCanvas.SetActive(true);
+           
+            if(uiManagerScript.InventoryItemsInts.Contains(neededItemID))
             {
-                if(uiManagerScript.InventoryItemsInts.Contains(neededItemID))
-                {
-                    itemInInventory = true;
-                    Debug.Log("Abre inventario");
-                }
-                else
-                {
-                    Debug.Log("No tienes el item necesario para abrir esta puerta");
-                }
+                itemInInventory = true;
             }
-
             else
             {
-                Debug.Log("Esto me recuerda a un puzzle");
+                Debug.Log("No tienes el item necesario para abrir esta puerta");
             }
+        
+
         }
     }
 
@@ -63,7 +74,9 @@ public class DoorManager : MonoBehaviour
     {
         if(otherCollider.gameObject.CompareTag("Player"))
         {
+            needAnItem = false;
             itemInInventory = false;
+            indicativeCanvas.SetActive(false);
         }
     }
 

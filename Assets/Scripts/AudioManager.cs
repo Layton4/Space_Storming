@@ -43,6 +43,8 @@ public class AudioManager : MonoBehaviour
         PlayerPrefs.SetFloat(mixerSFX, sfxSlider.value);
     }
 
+
+    #region Slider Functions
     public void SetMusicVolume(float value)  //When we change the value of the Music slider this value is sended to the audomixer and saved in Data persistence.
     {
         Mixer.SetFloat(mixerMusic, Mathf.Log10(value) * 20);
@@ -54,10 +56,13 @@ public class AudioManager : MonoBehaviour
         Mixer.SetFloat(mixerSFX, Mathf.Log10(value) * 20);
         DataPersistance.sfxVolume= sfxSlider.value;
     }
+
+    #endregion
+
     public void VolumeToggles()
     {
-        DataPersistance.sfxToggle = sfxToggle.isOn ? 1 : 0;
-        DataPersistance.musicToggle = musicToggle.isOn ? 1 : 0;
+        DataPersistance.sfxToggle = sfxToggle.isOn ? 1 : 0; //When we change the value of the toggle we pass the boolean value to an int to save it in DataPersistence,
+        DataPersistance.musicToggle = musicToggle.isOn ? 1 : 0; //if the toggle is On we save the number 1 and if is off we save 0 in datapersistence.
     }
 
 }
