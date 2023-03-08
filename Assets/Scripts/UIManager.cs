@@ -68,6 +68,7 @@ public class UIManager : MonoBehaviour
         InventoryItemsInts.Add(0);
         InventoryItemsInts.Add(0);
         InventoryItemsInts.Add(0);
+
         firstSlotEmpty = InventoryItemsInts.IndexOf(0);
         sceneFlowScript = FindObjectOfType<SceneFlow>();
         TabletAnimator.SetBool("Options", false);
@@ -102,12 +103,6 @@ public class UIManager : MonoBehaviour
             panels[0].SetActive(true);
 
             TabletAnimator.SetBool("Options", true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            foreach (GameObject i in panels) { i.SetActive(false); }
-            panels[1].SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.I))
