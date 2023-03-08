@@ -440,14 +440,8 @@ MonoBehaviour:
   - {fileID: 561349810}
   - {fileID: 1221627662}
   - {fileID: 1837749860}
-  panels:
-  - {fileID: 1452286133}
-  - {fileID: 1210223994}
-  OptionsPanelAnimator: {fileID: 1210223998}
-  autosafeToggle:
-  - {fileID: 1928973858}
-  - {fileID: 425734826}
   continueButton: {fileID: 895593924}
+  OptionsPanelAnimator: {fileID: 1210223998}
   SpacePanel: {fileID: 360874915}
 --- !u!4 &265980449
 Transform:
@@ -2785,7 +2779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1210223995
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2836,7 +2830,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -3207,7 +3201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3e6e9c6a78e5746961672e57750fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mixer: {fileID: 24100000, guid: b00a008d6163c644d9e9456cf3c382e4, type: 2}
 --- !u!1 &1342509446
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,15 +4560,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7549959672365624558, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959672365624558, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959672365624558, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959672648657852, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
@@ -4599,31 +4592,31 @@ PrefabInstance:
       objectReference: {fileID: 773664104}
     - target: {fileID: 7549959672759520634, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959672759520634, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959673342553991, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959673342553991, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959673342553991, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959673574207338, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959673574207338, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549959673678552364, guid: 9936396162a047748afed2117ca3cc73, type: 3}
       propertyPath: m_Navigation.m_SelectOnLeft
