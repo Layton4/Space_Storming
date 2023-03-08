@@ -136,6 +136,8 @@ public class MenuManager : MonoBehaviour
         DataPersistance.playerXPos = PlayerPrefs.GetFloat("PlayerXPos", 0);
         DataPersistance.playerYPos = PlayerPrefs.GetFloat("PlayerYPos", 0);
 
+
+        DataPersistance.DialoguePiecesDone = PlayerPrefs.GetInt("PiecesDialogueDone", 0);
     }
 
     public void NewGamePersistance()
@@ -165,6 +167,8 @@ public class MenuManager : MonoBehaviour
 
         DataPersistance.playerXPos = 0f;
         DataPersistance.playerYPos = 0;
+
+        DataPersistance.DialoguePiecesDone = 0;
     }
     #endregion
 

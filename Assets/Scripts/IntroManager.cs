@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class IntroManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class IntroManager : MonoBehaviour
     public Animator spaceShipAnimator;
 
     public SceneFlow SceneFlowScript;
+
     private void Awake()
     {
         SceneFlowScript = FindObjectOfType<SceneFlow>();
@@ -124,7 +126,14 @@ public class IntroManager : MonoBehaviour
                 spaceShipAnimator.SetBool("Out", true);
                 nextButton.gameObject.SetActive(false);
 
-                StartCoroutine(SceneFlowScript.GoToScene("Game", 2f));
+                if(SceneManager.GetActiveScene().name == "New Game")
+                {
+                    StartCoroutine(SceneFlowScript.GoToScene("Game", 2f));
+                }
+                else
+                {
+                    StartCoroutine(SceneFlowScript.GoToScene("Menu", 2f));
+                }
             }
         }
         else

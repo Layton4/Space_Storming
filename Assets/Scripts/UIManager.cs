@@ -54,6 +54,8 @@ public class UIManager : MonoBehaviour
 
     private GameManager gameManagerScript;
 
+    public TextMeshProUGUI dialogueTextBox;
+
     private void Awake()
     {
         EventSyst = GameObject.Find("EventSystem");
@@ -211,6 +213,8 @@ public class UIManager : MonoBehaviour
 
     public void CheckForPieces()
     {
+        StopAllCoroutines();
+        dialogueTextBox.text = "";
         newPiecesFound = 0;
 
         for(int i = 5; i <= 8; i++)
@@ -229,12 +233,14 @@ public class UIManager : MonoBehaviour
         UpdateInventory();
         if (newPiecesFound > 0)
         {
-            Debug.Log($"Nice! you found {newPiecesFound} new pieces, we only need {DataPersistance.piecesRemain} more to get out of here!");
+            dialogueTextBox.text = $"Nice! you found {newPiecesFound} new pieces, we only need {DataPersistance.piecesRemain} more to get out of here!";
+            //Debug.Log($"Nice! you found {newPiecesFound} new pieces, we only need {DataPersistance.piecesRemain} more to get out of here!");
         }
 
         else
         {
-            Debug.Log($"Return when you find more pieces acrossthe spaceship, we need {DataPersistance.piecesRemain} more to fix the capsule");
+            dialogueTextBox.text = $"Return when you find more pieces acrossthe spaceship, we need {DataPersistance.piecesRemain} more to fix the capsule";
+            //Debug.Log($"Return when you find more pieces acrossthe spaceship, we need {DataPersistance.piecesRemain} more to fix the capsule");
         }
 
     }

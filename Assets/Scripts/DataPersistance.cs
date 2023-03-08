@@ -43,6 +43,7 @@ public class DataPersistance
 
     public static int Dialogue1Done;
     public static int Dialogue3Done;
+    public static int DialoguePiecesDone;
 
     public static void SaveForFutureGames()
     {
@@ -82,6 +83,7 @@ public class DataPersistance
 
         PlayerPrefs.SetFloat("PlayerYPos", playerYPos);
 
+        PlayerPrefs.SetFloat("PiecesDialogueDone", DialoguePiecesDone);
     }
 
 }

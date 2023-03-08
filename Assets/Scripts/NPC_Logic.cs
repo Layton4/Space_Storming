@@ -12,8 +12,11 @@ public class NPC_Logic : MonoBehaviour
 
     private DialogueManager dialogueManagerScript;
 
+    private UIManager uiManagerScript;
+
     private void Awake()
     {
+        uiManagerScript = FindObjectOfType<UIManager>();
         dialogueManagerScript = FindObjectOfType<DialogueManager>();
         playerControllerScript = FindObjectOfType<PlayerControler>();
 
@@ -47,6 +50,23 @@ public class NPC_Logic : MonoBehaviour
             {
                 StopAllCoroutines();
                 StartCoroutine(dialogueManagerScript.EnemiesDialogue());
+            }
+
+            else if (intDialogue != 0 && DataPersistance.piecesRemain != 0)
+            {
+                if(DataPersistance.DialoguePiecesDone == 0)
+                {
+                    StartCoroutine(dialogueManagerScript.AboutThePieces());
+                }
+                else
+                {
+                    StartCoroutine(dialogueManagerScript.CheckPiecesDialogue());
+                } 
+            }
+
+            else if(DataPersistance.piecesRemain == 0)
+            {
+
             }
         }
     }

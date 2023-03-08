@@ -20,8 +20,8 @@ public class DialogueManager : MonoBehaviour
     public string[] enemiesDialogue;
 
     public string[] aboutPiecesDialogue;
-    public string[] NewPiecesDialogue;
-    public string[] GoFindMoreDialogue;
+    public string[] lookForPiecesDialogue;
+
 
     private PlayerControler playerControllerScript;
 
@@ -32,16 +32,18 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]private List<string[]> dialogueBlocs = new List<string[]>();
     public int currentDialogueBox;
 
+    private UIManager uiManagerScript;
+
     private void Awake()
     {
         playerControllerScript = FindObjectOfType<PlayerControler>();
+        uiManagerScript = FindObjectOfType<UIManager>();
 
         dialogueBlocs.Add(introductionDialogue);
         dialogueBlocs.Add(radioDialogue);
         dialogueBlocs.Add(enemiesDialogue);
         dialogueBlocs.Add(aboutPiecesDialogue);
-        dialogueBlocs.Add(NewPiecesDialogue);
-        dialogueBlocs.Add(GoFindMoreDialogue);
+        dialogueBlocs.Add(lookForPiecesDialogue);
 
     }
     void Start()
@@ -97,9 +99,13 @@ public class DialogueManager : MonoBehaviour
 
         else
         {
-            DialogueAnimDone = true;
-            StopAllCoroutines();
-            dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];  
+            if (currentDialogueBox != 4)
+            {
+                DialogueAnimDone = true;
+                StopAllCoroutines();
+                dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
+            }
+
         }
     }
 
@@ -176,6 +182,24 @@ public class DialogueManager : MonoBehaviour
         nextButton.gameObject.SetActive(true);
         dialogueTextBox.text = dialogueBlocs[currentDialogueBox][CurrentDialogueText];
         StartCoroutine(Letters());
+        DataPersistance.DialoguePiecesDone = 1;
+        DataPersistance.SaveForFutureGames();
+    }
+    public IEnumerator CheckPiecesDialogue()
+    {
+        dialogueTextBox.text = "";
+        currentDialogueBox = 4;
+        CurrentDialogueText = 0;
+        characterSpriteBox.sprite = charactersSprites[1];
+        characterNameBox.text = characterNames[1];
+        playerControllerScript.canMove = false;
+        dialogueBoxAnimator.SetBool("isTalking", true);
+        yield return new WaitForSeconds(1.1f);
+
+        nextButton.gameObject.SetActive(true);
+        uiManagerScript.CheckForPieces();
+        StartCoroutine(Letters());
+
     }
 
 }

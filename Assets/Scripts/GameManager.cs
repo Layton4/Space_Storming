@@ -55,11 +55,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-
-    }
-
     public void Prepareshot(Transform p)
     {
         bullets[currentBullet].transform.position = shotPoint.position;
