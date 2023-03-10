@@ -162,6 +162,7 @@ public class UIManager : MonoBehaviour
 
             if(itemInt >= firstPieceInt && itemInt <= lastPieceInt)
             {
+                DataPersistance.piecesRemain--;
                 int convertedint = itemInt - 5;
                 pickedPieces[convertedint] = 1;
                 SavePickedPieces();
@@ -213,15 +214,18 @@ public class UIManager : MonoBehaviour
             if(InventoryItemsInts.Contains(i))
             {
                 newPiecesFound++;
-                DataPersistance.piecesRemain--;
                 InventoryItemsInts.Remove(i);
-                InventoryItemsInts.Add(0);
             }
         }
-        
 
-        firstSlotEmpty = InventoryItemsInts.IndexOf(0);
+        for(int i = 0; i<newPiecesFound; i++)
+        {
+            InventoryItemsInts.Add(0);
+        }
+        
         UpdateInventory();
+        firstSlotEmpty = InventoryItemsInts.IndexOf(0);
+
         if (newPiecesFound > 0)
         {
             dialogueTextBox.text = $"Nice! you found {newPiecesFound} new pieces, we only need {DataPersistance.piecesRemain} more to get out of here!";

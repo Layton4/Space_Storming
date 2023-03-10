@@ -492,11 +492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0767e014de440747ba02b41ecd9cc00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsOnScreen:
-  - {fileID: 2143054563}
-  textBox: {fileID: 2143054561}
+  objectOnScreen: {fileID: 2143054563}
   nextButton: {fileID: 47365345}
-  skipButton: {fileID: 0}
   DialogueText: {fileID: 1885149034}
   texts:
   - We acomplish to scape, leaving the ship to those things
@@ -506,7 +503,6 @@ MonoBehaviour:
   - Thanks for playing!
   currentDialogue: 0
   spaceShipAnimator: {fileID: 295559692}
-  SceneFlowScript: {fileID: 0}
 --- !u!1 &844883754
 GameObject:
   m_ObjectHideFlags: 0
@@ -10624,12 +10620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3e6e9c6a78e5746961672e57750fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mixer: {fileID: 24100000, guid: b00a008d6163c644d9e9456cf3c382e4, type: 2}
---- !u!1 &2143054561 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6022732473764601451, guid: b51fa32a810156943a5f4cec017622ae, type: 3}
-  m_PrefabInstance: {fileID: 6022732472294225034}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2143054562 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6022732473764601448, guid: b51fa32a810156943a5f4cec017622ae, type: 3}
@@ -10640,7 +10630,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6022732473764601449, guid: b51fa32a810156943a5f4cec017622ae, type: 3}
   m_PrefabInstance: {fileID: 6022732472294225034}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143054561}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
