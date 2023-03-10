@@ -128,6 +128,7 @@ public class UIManager : MonoBehaviour
     {
         TabletAnimator.SetBool("GoMenu", true);
 
+        gameManagerScript.SafeOpenDoors();
         gameManagerScript.SafeLastPosition();
         DataPersistance.SaveForFutureGames();
 
@@ -237,6 +238,8 @@ public class UIManager : MonoBehaviour
 
     public void RespawnButton()
     {
+
+        gameManagerScript.SafeOpenDoors();
         sceneFlowScript.GoToGame();
     }
     IEnumerator ApearWaitAndOff(GameObject thing, float timer)

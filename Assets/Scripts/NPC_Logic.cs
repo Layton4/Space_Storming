@@ -66,7 +66,7 @@ public class NPC_Logic : MonoBehaviour
 
             else if(DataPersistance.piecesRemain == 0)
             {
-
+                StartCoroutine(dialogueManagerScript.FinalDialogue());
             }
         }
     }

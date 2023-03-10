@@ -88,6 +88,15 @@ public class GameManager : MonoBehaviour
         DataPersistance.playerYPos = player.transform.position.y;
     }
 
+    public void SafeOpenDoors()
+    {
+        DataPersistance.door1 = doors[0].GetComponent<Animator>().GetBool("isOpen") ? 1 : 0;
+        DataPersistance.door2 = doors[1].GetComponent<Animator>().GetBool("isOpen") ? 1 : 0;
+        DataPersistance.door3 = doors[2].GetComponent<Animator>().GetBool("isOpen") ? 1 : 0;
+        DataPersistance.door4 = doors[3].GetComponent<Animator>().GetBool("isOpen") ? 1 : 0;
+        DataPersistance.door5 = doors[4].GetComponent<Animator>().GetBool("isOpen") ? 1 : 0;
+        DataPersistance.door6 = doors[5].GetComponent<Animator>().GetBool("isOpen") ? 1 : 0;
+    }
 
     public void LoadOpenDoors()
     {

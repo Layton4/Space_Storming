@@ -81,7 +81,7 @@ public class DialogueManager : MonoBehaviour
         foreach (var d in originalMessage) //var (comodín)
         {
             dialogueTextBox.text += d;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.5f);
         }
 
         DialogueAnimDone = true;
